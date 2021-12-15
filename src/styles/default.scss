@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #02042d;
+    color: #fff;
+    font-family: "Gilroy", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 65px;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+}
+button {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    background: linear-gradient(274.92deg, #4B19F0 3.73%, #F09A19 181.96%);
+    border-radius: 33px;
+    color: #fff;
+}
+
+.ellipse {
+    filter: blur(75px);
+}
