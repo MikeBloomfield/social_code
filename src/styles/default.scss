@@ -2,7 +2,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -21,7 +23,6 @@ body {
     padding: 0 15px;
 }
 
-
 h1 {
     font-size: 60px;
     font-weight: 700;
@@ -33,15 +34,32 @@ h2 {
     font-weight: 700;
     line-height: 60px;
 }
+
+h3 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+}
 button {
     font-size: 20px;
     font-weight: 400;
     line-height: 25px;
-    background: linear-gradient(274.92deg, #4B19F0 3.73%, #F09A19 181.96%);
+    background: linear-gradient(274.92deg, #4b19f0 3.73%, #f09a19 181.96%);
     border-radius: 33px;
     color: #fff;
+    border: none;
+    outline: none;
 }
 
 .ellipse {
-    filter: blur(75px);
+    filter: blur(100px);
+    width: 1124px;
+    height: 1110px;
 }
+

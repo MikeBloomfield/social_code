@@ -1,0 +1,241 @@
+.header {
+    margin-top: 26px;
+    .header__top {
+        margin-bottom: 145px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+    }
+    .header__main {
+        margin-bottom: 350px;
+        max-width: 550px;
+        position: relative;
+        .header__main-wrapper {
+            position: relative;
+            z-index: 10;
+            .header__title {
+                margin-bottom: 30px;
+                .header__subtitle {
+                    font-size: 35px;
+                    line-height: 55px;
+                    font-weight: 400;
+                }
+            }
+            .header__desc {
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 50px;
+                max-width: 465px;
+            }
+            .header__button {
+                padding: 12px 47px 13px;
+                font-size: 20px;
+                line-height: 25px;
+                cursor: pointer;
+            }
+        }
+        .header__main-pic-1 {
+            position: absolute;
+            top: -140px;
+            right: -820px;
+            width: 847px;
+            height: 944px;
+            z-index: 2;
+        }
+        .header__main-pic-2 {
+            position: absolute;
+            top: 245px;
+            left: -350px;
+            transform: rotate(-90deg);
+        }
+        .header__main-pic-3 {
+            position: absolute;
+            top: -330px;
+            right: -820px;
+            z-index: 2;
+        }
+        .header__main-pic-4 {
+            position: absolute;
+            top: -240px;
+            right: -755px;
+            opacity: 0.3;
+            z-index: 2;
+        }
+        .header__main-pic-5 {
+            position: absolute;
+            top: 423px;
+            right: -240px;
+            opacity: 0.3;
+            z-index: 1;
+        }
+        .header__main-pic-6 {
+            position: absolute;
+            top: -35px;
+            right: -465px;
+            z-index: 1;
+        }
+        .header__main-pic-6 {
+            position: absolute;
+            top: -35px;
+            right: -465px;
+            z-index: 1;
+        }
+        .header__main-pic-6 {
+            position: absolute;
+            top: -35px;
+            right: -465px;
+            z-index: 1;
+        }
+        .header__main-pic-7 {
+            position: absolute;
+            top: 610px;
+            right: 0;
+            z-index: 1;
+        }
+        .header__main-pic-8 {
+            position: absolute;
+            top: 125px;
+            right: -647px;
+            z-index: 1;
+            transform: rotate(90deg);
+        }
+        .header__main-pic-9 {
+            position: absolute;
+            top: -150px;
+            right: -900px;
+            z-index: 1;
+            width: 1024px;
+            height: 1000px;
+        }
+        
+    }
+
+    .header__button:hover,
+    .header__button:focus,
+    .header__button:active {
+        background: linear-gradient(274.92deg, #f09a19 3.73%, #4b19f0 181.96%);
+    }
+}
+
+.nav {
+    .nav__list {
+        display: flex;
+        color: #fcb35e;
+        align-items: center;
+        .nav__list-item {
+            margin-right: 65px;
+            font-size: 15px;
+            line-height: 25px;
+            padding-bottom: 0;
+        }
+        .nav__list-item:hover,
+        .nav__list-item:focus,
+        .nav__list-item:active {
+            color: aqua;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .nav__list-item:nth-child(4) {
+            margin-right: 75px;
+        }
+        .nav__list-item:last-child {
+            margin-right: 0;
+        }
+        .nav__button {
+            padding: 7px 30px 8px;
+            font-size: 15px;
+            line-height: 25px;
+            cursor: pointer;
+        }
+        .nav__button:hover,
+        .nav__button:focus,
+        .nav__button:active {
+            background: linear-gradient(274.92deg, #f09a19 3.73%, #4b19f0 181.96%);
+        }
+    }
+}
+
+.unique {
+    margin-bottom: 175px;
+    .unique__title {
+        margin-bottom: 53px;
+    }
+    .unique__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 30px;
+    }
+    .unique__card {
+        border: #655ce0 1px solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 55px;
+        .unique__card-pic {
+            margin-top: 100px;
+            margin-bottom: 70px;
+        }
+        .unique__card-title {
+            margin-bottom: 30px;
+        }
+        .unique__card-desc {
+            margin-bottom: 72px;
+            opacity: 0.7;
+            text-align: center;
+        }
+    }
+    .unique--first {
+        border-top-right-radius: 140px;
+    }
+    .unique--second {
+        border-bottom-left-radius: 140px;
+    }
+    .unique--third {
+        border-top-left-radius: 140px;
+    }
+}
+
+.guide {
+    margin-bottom: 171px;
+    .guide__outer {
+        display: flex;
+        justify-content: space-between;
+        .guide__inner {
+            max-width: 550px;
+            .guide__title {
+                margin-bottom: 20px;
+            }
+            .guide__desc {
+                margin-bottom: 50px;
+            }
+            .guide__button-wrapper {
+                display: flex;
+                align-items: center;
+                .guide__button {
+                    padding: 12px 57px 13px 58px;
+                    font-size: 20px;
+                    line-height: 25px;
+                    cursor: pointer;
+                }
+                .guide__button:hover,
+                .guide__button:focus,
+                .guide__button:active {
+                    background: linear-gradient(274.92deg, #f09a19 3.73%, #4b19f0 181.96%);
+                }
+                .guide__button-add {
+                    font-size: 20px;
+                    line-height: 30px;
+                    opacity: 0.5;
+                    padding-left: 23px;
+                }
+            }
+        }
+        .guide__pic {
+            width: 188px;
+            height: 381px;
+            margin-right: 185px;
+        }
+    }
+}

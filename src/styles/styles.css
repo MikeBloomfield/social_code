@@ -2,4 +2,6 @@
 @import "reset.scss";
 @import "default.scss";
 @import "fonts.scss";
+@import "components/header.scss"
+
 
