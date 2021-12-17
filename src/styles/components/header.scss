@@ -114,9 +114,7 @@
         }
     }
 
-    .header__button:hover,
-    .header__button:focus,
-    .header__button:active {
+    .header__button:hover{
         background: linear-gradient(274.92deg, #f09a19 3.73%, #4b19f0 181.96%);
     }
 }
@@ -155,9 +153,7 @@
             line-height: 25px;
             cursor: pointer;
         }
-        .nav__button:hover,
-        .nav__button:focus,
-        .nav__button:active {
+        .nav__button:hover {
             background: linear-gradient(274.92deg, #f09a19 3.73%, #4b19f0 181.96%);
         }
     }
@@ -246,9 +242,7 @@
                     line-height: 25px;
                     cursor: pointer;
                 }
-                .guide__button:hover,
-                .guide__button:focus,
-                .guide__button:active {
+                .guide__button:hover {
                     background: linear-gradient(274.92deg, #f09a19 3.73%, #4b19f0 181.96%);
                 }
                 .guide__button-add {

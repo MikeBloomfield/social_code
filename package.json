@@ -33,5 +33,9 @@
     "webpack": "^5.64.3",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.5.0"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "wowjs": "^1.1.3"
   }
 }
