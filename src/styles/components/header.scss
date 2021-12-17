@@ -1,14 +1,28 @@
 .header {
     margin-top: 26px;
+    .header-inner {
+        position: fixed;
+        z-index: 30;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        transition: 0.5s;
+        .header-wrapper {
+            padding-top: 26px;
+        }
+    }
+    .header-inner-active {
+        background: #02042d;
+    }
     .header__top {
         margin-bottom: 145px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: relative;
-        z-index: 10;
     }
     .header__main {
+        margin-top: 230px;
         margin-bottom: 350px;
         max-width: 550px;
         position: relative;
@@ -640,6 +654,7 @@
 
 .package {
     margin-bottom: 500px;
+    position: relative;
     .package__title {
         margin-bottom: 40px;
     }
@@ -647,19 +662,12 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 50px;
-
         .package__card {
+            position: relative;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            
-            .package__card:hover,
-            .package__card:active,
-            .package__card:focus {
-                background: linear-gradient(274.13deg, #4b19f0 -18.41%, #f09a19 188.92%);
-            }
-
             .package__wrapper {
                 display: flex;
                 flex-direction: column;
@@ -689,6 +697,7 @@
                 max-width: 101px;
                 font-weight: 700;
                 text-align: center;
+                margin-bottom: 20px;
 
                 .package__subtitle-month {
                     opacity: 0.7;
@@ -755,5 +764,35 @@
         .package__price {
             text-align: center;
         }
+        
     }
+    .package__abs-pic {
+        position: absolute;
+        top: 550px;
+        left: 1000px;
+        z-index: -1;
+        width: 682px;
+        height: 682px;
+    }
+    .package__card:hover {
+        background: linear-gradient(274.13deg, #4B19F0 -18.41%, #F09A19 188.92%);
+        transition: .2s;
+        .package__button {
+            background:  #02042d;
+            transition: .2s;
+        }
+        .package__list-item::after {
+            content: "";
+            background-image: none;
+            background: #fff;
+            height: 10px;
+            width: 10px;
+            top: 7px;
+            left: 0;
+            position: absolute;
+            z-index: 2;
+            border-radius: 50px;
+        }
+    }
+    
 }
