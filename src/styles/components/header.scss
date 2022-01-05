@@ -178,11 +178,51 @@
             position: relative;
             z-index: 2;
             backdrop-filter: blur(2px);
-            .unique__card-pic {
-                margin-top: 100px;
-                margin-bottom: 70px;
+            .unique-abs-pic-1 {
+                position: absolute;
+                width: 73px;
+                height: 73px;
+                top:120px;
+                left: 180px;
             }
+            .unique-abs-pic-2 {
+                position: absolute;
+                width: 118px;
+                height: 106px;
+                top:60px;
+                left: 110px;
+            }
+            .unique-abs-pic-3 {
+                position: absolute;
+                width: 73px;
+                height: 73px;
+                top:120px;
+                left: 120px;
+            }
+            .unique-abs-pic-4 {
+                position: absolute;
+                width: 83px;
+                height: 73px;
+                top:100px;
+                left: 155px;
+            }
+            .unique-abs-pic-5 {
+                position: absolute;
+                width: 73px;
+                height: 73px;
+                top:80px;
+                left: 170px;
+            }
+            .unique-abs-pic-6 {
+                position: absolute;
+                width: 93px;
+                height: 100px;
+                top:100px;
+                left: 110px;
+            }
+            
             .unique__card-title {
+                margin-top: 278px;
                 margin-bottom: 30px;
             }
             .unique__card-desc {
@@ -253,30 +293,43 @@
                 }
             }
         }
-        .guide__pic {
-            width: 188px;
-            height: 381px;
-            margin-right: 185px;
-            position: relative;
-            z-index: 2;
+        .guide__inner-bottom {
+            .guide__pic {
+                width: 188px;
+                height: 381px;
+                margin-right: 185px;
+                position: relative;
+                z-index: 2;
+            }
+            .guide__inner-bottom-abs {
+                position: relative;
+                .guide__abs-pic-1 {
+                    position: absolute;
+                    top: -520px;
+                    right: 30px;
+                    transform: rotate(-90deg);
+                }
+                .guide__abs-pic-2 {
+                    position: absolute;
+                    top: -240px;
+                    right: 345px;
+                    transform: rotate(-90deg);
+                }
+                .guide__abs-pic-3 {
+                    position: absolute;
+                    top: -340px;
+                    right: 150px;
+                }
+                .guide__abs-pic-4 {
+                    position: absolute;
+                    z-index: 5;
+                    top:-205px;
+                    left: 70px;
+                }
+            }
         }
-        .guide__abs-pic-1 {
-            position: absolute;
-            top: -140px;
-            right: 30px;
-            transform: rotate(-90deg);
-        }
-        .guide__abs-pic-2 {
-            position: absolute;
-            top: 140px;
-            right: 345px;
-            transform: rotate(-90deg);
-        }
-        .guide__abs-pic-3 {
-            position: absolute;
-            top: -100px;
-            right: 150px;
-        }
+        
+        
     }
 }
 
@@ -647,7 +700,7 @@
 }
 
 .package {
-    margin-bottom: 500px;
+    margin-bottom: 140px;
     position: relative;
     .package__title {
         margin-bottom: 40px;
@@ -656,6 +709,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 50px;
+        position: relative;
         .package__card {
             position: relative;
             display: flex;
@@ -762,8 +816,8 @@
     }
     .package__abs-pic {
         position: absolute;
-        top: 550px;
-        left: 1000px;
+        top: 450px;
+        left: 400px;
         z-index: -1;
         width: 682px;
         height: 682px;
@@ -771,6 +825,7 @@
     .package__card:hover {
         background: linear-gradient(274.13deg, #4B19F0 -18.41%, #F09A19 188.92%);
         transition: .2s;
+        cursor: pointer;
         .package__button {
             background:  #02042d;
             transition: .2s;
