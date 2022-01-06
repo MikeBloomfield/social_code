@@ -75,8 +75,13 @@
             position: absolute;
             top: -240px;
             right: -755px;
-            opacity: 0.3;
             z-index: 2;
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-name: fadeInSpecial;
+            animation-name: fadeInSpecial;
         }
         .header__main-pic-5 {
             position: absolute;
@@ -845,3 +850,22 @@
     }
     
 }
+
+@-webkit-keyframes fadeInSpecial {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 0.3;
+    }
+  }
+  @keyframes fadeInSpecial {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 0.3;
+    }
+  }
