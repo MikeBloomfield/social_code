@@ -1,8 +1,10 @@
 @import "normalize.scss";
 @import "reset.scss";
 @import "default.scss";
+@import 'animate.css';
 @import "fonts.scss";
 @import "components/animation.scss";
 @import "components/header.scss";
+
 
 

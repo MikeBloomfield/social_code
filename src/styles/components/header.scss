@@ -58,8 +58,8 @@
             z-index: 3;
             -webkit-animation-name: zeus;
             animation-name: zeus;
-            animation-duration: 2s;
-            -webkit-animation-duration: 2s;
+            animation-duration: 3s;
+            -webkit-animation-duration: 3s;
         }
         .header__main-pic-2 {
             position: absolute;
@@ -68,8 +68,8 @@
             z-index: 2;
             -webkit-animation-name: zeus2;
             animation-name: zeus2;
-            animation-duration: 2s;
-            -webkit-animation-duration: 2s;
+            animation-duration: 3s;
+            -webkit-animation-duration: 3s;
         }
         .header__main-pic-3 {
             position: absolute;
@@ -78,8 +78,8 @@
             z-index: 2;
             -webkit-animation-name: zeus;
             animation-name: zeus;
-            animation-duration: 2s;
-            -webkit-animation-duration: 2s;
+            animation-duration: 3s;
+            -webkit-animation-duration: 3s;
         }
         .header__main-pic-4 {
             position: absolute;
@@ -133,7 +133,7 @@
             z-index: 1;
             width: 1024px;
             height: 1000px;
-            // animation: circlered-2 8s linear infinite;
+            animation: circlered-2 12s linear infinite;
         }
     }
 
@@ -256,10 +256,9 @@
         }
         .unique__pic-1 {
             position: absolute;
-            top: 445px;
-            left: -60px;
+            top: 515px;
+            left: -145px;
             z-index: 0;
-            transform: rotate(90deg);
         }
         .unique__pic-2 {
             position: absolute;
@@ -348,6 +347,7 @@
                     z-index: 5;
                     top:-205px;
                     left: 70px;
+                    animation-delay: 2s;
                     animation: bounceSpecial 8s infinite ease-in-out;
 
                 }
@@ -743,7 +743,6 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            transition: 2s;
             .package__wrapper {
                 display: flex;
                 flex-direction: column;
@@ -849,6 +848,7 @@
         z-index: -1;
         width: 682px;
         height: 682px;
+        animation: circlered-2 10s linear infinite;
     }
     .package__card:hover {
         background: linear-gradient(274.13deg, #4B19F0 -18.41%, #F09A19 188.92%);
