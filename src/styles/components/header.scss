@@ -39,14 +39,26 @@
             .header__desc {
                 font-size: 20px;
                 line-height: 30px;
-                margin-bottom: 50px;
+                margin-bottom: 45px;
                 max-width: 465px;
             }
             .header__button {
-                padding: 12px 47px 13px;
+                padding: 12px 47px 12px 47px;
+                text-align: center;
                 font-size: 20px;
                 line-height: 25px;
+                transition: 0.5s background-position ease-in-out;
                 cursor: pointer;
+                .header__button-wrapper{
+                    -webkit-animation-name: bounceInSpecial;
+                    animation-name: bounceInSpecial;
+                    display: inline-block;
+                    animation-duration: 8s;
+                    animation-iteration-count: infinite;
+                    -webkit-animation-duration: 8s;
+                    -webkit-animation-iteration-count: infinite;
+                    animation-delay: 1s;
+                }
             }
         }
         .header__main-pic-1 {
@@ -133,13 +145,14 @@
             z-index: 1;
             width: 1024px;
             height: 1000px;
-            animation: circlered-2 12s linear infinite;
+            animation: circlered-2 8s linear infinite;
         }
     }
 
     .header__button:hover{
-        background: linear-gradient(274.92deg, #f09a19 3.73%, #4b19f0 181.96%);
+        background-position: right;
     }
+    
 }
 
 .nav {
@@ -156,13 +169,16 @@
         .nav__item-link {
             text-decoration: none;
             color: #fcb35e;
+            display: inline-block;
+            padding: 5px 0px;
+            transition: 1s ease;
         }
-        .nav__item-link:hover,
-        .nav__item-link:focus,
-        .nav__item-link:active {
-            color: aqua;
+        .nav__list-item:hover {
             cursor: pointer;
-            transition: 0.5s;
+            .nav__item-link{
+                color: aqua;
+            }
+            
         }
         .nav__list-item:nth-child(4) {
             margin-right: 75px;
@@ -175,9 +191,10 @@
             font-size: 15px;
             line-height: 25px;
             cursor: pointer;
+            transition: .5s ease;
         }
         .nav__button:hover {
-            background: linear-gradient(274.92deg, #f09a19 3.73%, #4b19f0 181.96%);
+            background-position: right;
         }
     }
 }
@@ -201,6 +218,7 @@
             position: relative;
             z-index: 2;
             backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
             .unique-abs-pic-1 {
                 position: absolute;
                 width: 73px;
@@ -447,7 +465,6 @@
                 top: 665px;
                 left: -60px;
                 z-index: 1;
-                transform: rotate(90deg);
             }
         }
         .description__bottom-right {
@@ -468,6 +485,7 @@
         padding: 52px 163px 50px;
         border-bottom-right-radius: 140px;
         backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
         background: transparent;
         margin-bottom: 170px;
         position: relative;
@@ -855,7 +873,7 @@
         cursor: pointer;
         .package__button {
             background:  #02042d;
-            transition: 1s;
+            transition: 1s ease-in-out;
         }
         .package__list-item::after {
             content: "";
@@ -872,3 +890,4 @@
     }
     
 }
+

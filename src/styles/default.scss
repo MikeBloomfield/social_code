@@ -58,7 +58,9 @@ button {
     font-size: 20px;
     font-weight: 400;
     line-height: 25px;
-    background: linear-gradient(274.92deg, #4b19f0 3.73%, #f09a19 181.96%);
+    background: linear-gradient(to right, #99568C, #4b19f0,#99568C);
+    background-size: 200%;
+    background-position: left;
     border-radius: 33px;
     color: #fff;
     border: none;
