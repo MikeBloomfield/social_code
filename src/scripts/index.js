@@ -2,4 +2,4 @@
 import '../styles/styles.css'
 import './scroll.js'
 import WOW from 'wowjs';
-new WOW.WOW().init();
+new WOW.WOW().init();s
