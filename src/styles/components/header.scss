@@ -322,9 +322,10 @@
                     font-size: 20px;
                     line-height: 25px;
                     cursor: pointer;
+                    transition: .5s ease;
                 }
                 .guide__button:hover {
-                    background: linear-gradient(274.92deg, #f09a19 3.73%, #4b19f0 181.96%);
+                    background-position: right;
                 }
                 .guide__button-add {
                     font-size: 20px;
@@ -502,6 +503,7 @@
             font-weight: 100;
             text-align: right;
             display: block;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
         .description__blockquote-pic {
             position: absolute;
@@ -889,5 +891,121 @@
         }
     }
     
+    
+}
+
+.feedback {
+    margin-bottom: 140px;
+    .feedback__title {
+        margin-bottom: 20px;
+    }
+    .feedback__subtitle {
+        margin-bottom: 52px;
+        color:rgba(255, 255, 255, 0.7);
+    }
+}
+.join {
+    margin-bottom: 140px;
+    .join__title {
+        margin-bottom: 20px;
+    }
+    .join__subtitle {
+        color:rgba(255, 255, 255, 0.7);
+        margin-bottom: 50px;
+        font-weight: 100;
+    }
+    .join__button {
+        padding: 12px 49px 13px 50px;
+        cursor: pointer;
+        transition: .5s ease;
+    }
+    .join__button:hover {
+        background-position: right;
+    }
+}
+.faq {
+    margin-bottom: 75px;
+    .faq__title {
+        margin-bottom: 40px;
+    }
+    .accordion {
+
+        .accordion__item {
+            margin-bottom: 25px;
+            border-bottom-right-radius: 140px;
+            .accordion__item-title {
+                margin-top: 25px;
+                margin-bottom: 10px;
+                padding-left: 74px;
+                position: relative;
+                cursor: pointer;
+            }
+            
+            .accordion__item-title::before {
+                content:"";
+                background-image: url("../assets/images/vector/plus.svg"); 
+                display: block;
+                position: absolute;
+                width: 17px;
+                height: 17px;
+                top: 4px;
+                left: 35px;
+            }
+            
+            .accordion__item-title::after {
+                content:"";
+                background-image: url("../assets/images/vector/minus.svg"); 
+                display: none;
+                position: absolute;
+                width: 17px;
+                height: 17px;
+                top: 4px;
+                left: 35px;
+            }
+            .accordion__item-content {
+                margin: 0 91px 43px 74px;
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 20px;
+                line-height: 35px; 
+                display: none;     
+            }
+            .accordion__item-content--show {
+                display: block;
+            }
+            
+        }
+        .accordion__item--active {
+            border: #655ce0 1px solid;
+        }
+    }
+}
+
+.footer {
+    .footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 13px;
+        .footer__social {
+            display: flex;
+            align-items: top;
+            .footer__social-link {
+                height: 30px;
+            }
+            .footer__social-link:not(:last-of-type){
+                margin-right: 48px;
+            }
+        }
+        
+    }
+    .footer__copyright {
+        text-align: right;
+        margin-bottom: 50px;
+        font-size: 15px;
+        line-height: 25px;
+        color: rgba(255, 255, 255, 0.7);
+        font-weight: 100;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        
+    }
 }
 
