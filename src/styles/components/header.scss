@@ -832,6 +832,8 @@
             .package__second-card-pic {
                 position: absolute;
                 top: 650px;
+                width: 370px;
+                height: 237px;
             }
             .package__price {
                 font-weight: 800;
@@ -906,6 +908,7 @@
 }
 .join {
     margin-bottom: 140px;
+    position: relative;
     .join__title {
         margin-bottom: 20px;
     }
@@ -921,6 +924,36 @@
     .join__button:hover {
         background-position: right;
         transition: .5s ease;
+    }
+    .join__abs-pic-1 {
+        position: absolute;
+        top: -10px;
+        left: 850px;
+        width: 398px;
+        height: 326px;
+        z-index: 3;
+    }
+    .join__abs-pic-2 {
+        position: absolute;
+        top: 182px;
+        left: 1079px;
+        z-index: 4;
+    }
+    .join__abs-pic-3 {
+        position: absolute;
+        top: -450px;
+        left: -110px;
+        z-index: 2;
+    }
+    .join__abs-pic-4 {
+        position: absolute;
+        top: -108px;
+        left: 850px;
+        width: 350px;
+        height: 343px;
+        z-index: 1;
+        animation: circlered-2 8s linear infinite;
+        -webkit-animation: circlered-2 8s linear infinite;
     }
 }
 .faq {
@@ -1001,6 +1034,8 @@
             z-index: 1;
             width: 487px;
             height: 477px;
+            animation: circlered-2 8s linear infinite;
+            -webkit-animation: circlered-2 8s linear infinite;
 
         }
         .faq__abs-pic-3 {
@@ -1024,6 +1059,8 @@
             z-index: 0;
             width: 562px;
             height: 550px;
+            animation: circlered-2 8s linear infinite;
+            -webkit-animation: circlered-2 8s linear infinite;
         }
         .faq__abs-pic-6 {
             position: absolute;
@@ -1052,7 +1089,7 @@
         .footer__abs-pic {
             position: absolute;
             top: -10px;
-            left: -115px;
+            left: -135px;;
             z-index: -1;
         }
         
