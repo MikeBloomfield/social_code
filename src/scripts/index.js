@@ -1,4 +1,4 @@
-import 'animate.css';
+// import 'animate.css';
 import '../styles/styles.css'
 import './accordion.js'
 import './scroll.js'

@@ -39,11 +39,11 @@
 
 
 (function () {
-    const header = document.querySelector('.header-inner');
+    const header = document.querySelector('.header');
     window.onscroll = () => {
-        if (window.pageYOffset > 50) {
-            header.classList.add("header-inner-active")
-        } else { header.classList.remove("header-inner-active") }
+        if (window.pageYOffset > 20) {
+            header.classList.add("header--active")
+        } else { header.classList.remove("header--active") }
     };
 }());
 
