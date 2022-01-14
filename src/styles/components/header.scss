@@ -2,24 +2,28 @@
     position: fixed;
     z-index: 999;
     top: 0;
-    left: 0;
     width: 100%;
     padding-top: 25px;
+    padding-bottom: 25px;
     .header__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .header__logo-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 .header--active {
     background: #02042d;
-    transition: .5s ease-out;
+    transition: 0.5s ease-out;
 }
 
 .nav {
     .nav__list {
         display: flex;
-        color: #fcb35e;
         align-items: center;
         .nav__list-item {
             margin-right: 65px;
@@ -29,16 +33,17 @@
         }
         .nav__item-link {
             text-decoration: none;
-            color: #fcb35e;
             display: inline-block;
             padding: 5px 0px;
+            color: #fcb35e;
         }
-        .nav__list-item:hover {
-            cursor: pointer;
-            .nav__item-link {
-                color: aqua;
-            }
+        .nav__item-link:hover {
+            color: aqua;
+            transition: 1s ease;
+             
         }
+
+
         .nav__list-item:nth-child(4) {
             margin-right: 75px;
         }
@@ -133,7 +138,7 @@
         }
         .hero__main-pic-4 {
             position: absolute;
-            top: -240px;
+            top: -250px;
             right: -755px;
             z-index: 2;
             opacity: 0.3;
@@ -191,8 +196,6 @@
         background-position: right;
     }
 }
-
-
 
 .unique {
     margin-bottom: 175px;
@@ -918,52 +921,55 @@
 }
 .join {
     margin-bottom: 140px;
-    position: relative;
-    .join__title {
-        margin-bottom: 20px;
-    }
-    .join__subtitle {
-        color: rgba(255, 255, 255, 0.7);
-        margin-bottom: 50px;
-        font-weight: 100;
-    }
-    .join__button {
-        padding: 12px 49px 13px 50px;
-        cursor: pointer;
-    }
-    .join__button:hover {
-        background-position: right;
-        transition: 0.5s ease;
-    }
-    .join__abs-pic-1 {
-        position: absolute;
-        top: -10px;
-        left: 850px;
-        width: 398px;
-        height: 326px;
-        z-index: 3;
-    }
-    .join__abs-pic-2 {
-        position: absolute;
-        top: 182px;
-        left: 1079px;
-        z-index: 4;
-    }
-    .join__abs-pic-3 {
-        position: absolute;
-        top: -450px;
-        left: -110px;
-        z-index: 2;
-    }
-    .join__abs-pic-4 {
-        position: absolute;
-        top: -108px;
-        left: 850px;
-        width: 350px;
-        height: 343px;
-        z-index: 1;
-        animation: circlered-2 8s linear infinite;
-        -webkit-animation: circlered-2 8s linear infinite;
+
+    .join__wrapper {
+        position: relative;
+        .join__title {
+            margin-bottom: 20px;
+        }
+        .join__subtitle {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 50px;
+            font-weight: 100;
+        }
+        .join__button {
+            padding: 12px 49px 13px 50px;
+            cursor: pointer;
+            transition: 0.5s background-position ease-in-out;
+        }
+        .join__button:hover {
+            background-position: right;
+        }
+        .join__abs-pic-1 {
+            position: absolute;
+            top: -10px;
+            left: 700px;
+            width: 398px;
+            height: 326px;
+            z-index: 3;
+        }
+        .join__abs-pic-2 {
+            position: absolute;
+            top: 182px;
+            left: 929px;
+            z-index: 4;
+        }
+        .join__abs-pic-3 {
+            position: absolute;
+            top: -450px;
+            left: -260px;
+            z-index: 2;
+        }
+        .join__abs-pic-4 {
+            position: absolute;
+            top: -108px;
+            left: 700px;
+            width: 350px;
+            height: 343px;
+            z-index: 1;
+            animation: circlered-2 8s linear infinite;
+            -webkit-animation: circlered-2 8s linear infinite;
+        }
     }
 }
 .faq {
