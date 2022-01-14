@@ -898,13 +898,38 @@
 
 .feedback {
     margin-bottom: 140px;
-    .feedback__title {
-        margin-bottom: 20px;
-    }
-    .feedback__subtitle {
-        margin-bottom: 52px;
-        color:rgba(255, 255, 255, 0.7);
-    }
+     .feedback__wrapper-main {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         .feedback__wrapper-top {
+            .feedback__title {
+                margin-bottom: 20px;
+            }
+            .feedback__subtitle {
+                margin-bottom: 52px;
+                color:rgba(255, 255, 255, 0.7);
+            }
+         }
+         .feedback__wrapper-bottom {
+             padding-top: 45px;
+             .feedback__arrow-left {
+                padding-right: 20px;
+                position: relative;
+                z-index: 100;
+                cursor: pointer;
+             }
+             .feedback__arrow-right {
+                padding-right: 200px; 
+                cursor: pointer;
+                position: relative;
+                z-index: 100;
+                cursor: pointer;
+             }
+         }
+
+     }
+   
 }
 .join {
     margin-bottom: 140px;
