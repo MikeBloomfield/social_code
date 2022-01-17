@@ -886,7 +886,6 @@
         cursor: pointer;
         .package__button {
             background: #02042d;
-            transition: 1s ease-in-out;
         }
         .package__list-item::after {
             content: "";
@@ -1004,14 +1003,19 @@
     .accordion {
         .accordion__item {
             border-bottom-right-radius: 140px;
-            transition: 1s;
+            transition: .3s linear;
             transition-property: border;
+            border: transparent 1px solid;
+            
+            position: relative;
+            z-index: 6;
             .accordion__item-title {
                 margin-top: 25px;
                 margin-bottom: 10px;
                 padding-left: 74px;
                 position: relative;
                 cursor: pointer;
+                
             }
 
             .accordion__item-title--plus {
@@ -1044,8 +1048,10 @@
                 font-size: 20px;
                 line-height: 35px;
                 display: none;
+
             }
             .accordion__item-content--show {
+                animation: appear 1s ease-in-out;
                 display: block;
             }
         }
