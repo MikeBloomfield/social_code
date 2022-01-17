@@ -5,6 +5,8 @@
     width: 100%;
     padding-top: 25px;
     padding-bottom: 25px;
+    transition-property: background-color;
+    transition: 0.5s ease-out;
     .header__top {
         display: flex;
         justify-content: space-between;
@@ -17,8 +19,7 @@
     }
 }
 .header--active {
-    background: #02042d;
-    transition: 0.5s ease-out;
+    background-color: #02042d;
 }
 
 .nav {
@@ -36,10 +37,12 @@
             display: inline-block;
             padding: 5px 0px;
             color: #fcb35e;
+            transition: 1s ease;
+            transition-property: color;
         }
         .nav__item-link:hover {
             color: aqua;
-            transition: 1s ease;
+            
              
         }
 
@@ -56,6 +59,10 @@
             line-height: 25px;
             cursor: pointer;
             transition: 0.5s background-position ease-in-out;
+            .nav__button-wrapper {
+                position: relative;
+                top: 1px;
+            }
         }
         .nav__button:hover {
             background-position: right;
@@ -101,6 +108,8 @@
                 -webkit-animation-duration: 8s;
                 -webkit-animation-iteration-count: infinite;
                 animation-delay: 1s;
+                position: relative;
+                top: 2px;
             }
         }
 
@@ -321,6 +330,10 @@
                     line-height: 25px;
                     cursor: pointer;
                     transition: 0.5s ease;
+                    .guide__button-wrapper-inner {
+                        position: relative;
+                        top: 2px;
+                    }
                 }
                 .guide__button:hover {
                     background-position: right;
@@ -839,6 +852,10 @@
                 cursor: pointer;
                 width: 210px;
                 margin-bottom: 50px;
+                .package__button-wrapper {
+                    position: relative;
+                    top: 2px;
+                }
             }
         }
         .package--first {
@@ -904,13 +921,13 @@
         .feedback__wrapper-bottom {
             padding-top: 45px;
             .feedback__arrow-left {
-                padding-right: 20px;
+                margin-right: 20px;
                 position: relative;
                 z-index: 100;
                 cursor: pointer;
             }
             .feedback__arrow-right {
-                padding-right: 200px;
+                margin-right: 200px;
                 cursor: pointer;
                 position: relative;
                 z-index: 100;
@@ -936,6 +953,10 @@
             padding: 12px 49px 13px 50px;
             cursor: pointer;
             transition: 0.5s background-position ease-in-out;
+            .join__button-wrapper {
+             position: relative;
+             top: 2px;
+            }
         }
         .join__button:hover {
             background-position: right;
@@ -982,8 +1003,9 @@
     }
     .accordion {
         .accordion__item {
-            margin-bottom: 25px;
             border-bottom-right-radius: 140px;
+            transition: 1s;
+            transition-property: border;
             .accordion__item-title {
                 margin-top: 25px;
                 margin-bottom: 10px;
@@ -1029,7 +1051,6 @@
         }
         .accordion__item--active {
             border: #655ce0 1px solid;
-            transition: 1s;
         }
         .faq__abs-pic-1 {
             position: absolute;
@@ -1114,3 +1135,4 @@
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 }
+

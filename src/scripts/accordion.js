@@ -8,7 +8,6 @@ $(document).ready(function() {
         const minus = $(this).children('.accordion__item-title--minus');
 
 
-
         if (parent.hasClass('accordion__item--active')) { 
 
             parent.removeClass('accordion__item--active');
@@ -17,11 +16,11 @@ $(document).ready(function() {
             minus.removeClass('show');
 
         } else {
-
+            
             $('.accordion__item').removeClass('accordion__item--active');
-            parent.addClass('accordion__item--active').slideDown(200);
+            parent.addClass('accordion__item--active');
             $('.accordion__item-content').removeClass('accordion__item-content--show');
-            sib.addClass('accordion__item-content--show').slideDown(200);
+            sib.addClass('accordion__item-content--show');
             $('.accordion__item-title--plus').removeClass('collapse');
             plus.addClass('collapse');
             $('.accordion__item-title--minus').removeClass('show');
