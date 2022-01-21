@@ -7,7 +7,7 @@
     padding-bottom: 25px;
     transition-property: background-color;
     transition: 0.5s ease-out;
-    .header__top {
+    &__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -23,14 +23,20 @@
 }
 
 .nav {
-    .nav__list {
+    &__list {
         display: flex;
         align-items: center;
-        .nav__list-item {
+        &-item {
             margin-right: 65px;
             font-size: 15px;
             line-height: 25px;
             padding-bottom: 0;
+            &:nth-child(4) {
+                margin-right: 75px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
         }
         .nav__item-link {
             text-decoration: none;
@@ -39,41 +45,32 @@
             color: #fcb35e;
             transition: 1s ease;
             transition-property: color;
-        }
-        .nav__item-link:hover {
-            color: aqua;
-            
-             
-        }
-
-
-        .nav__list-item:nth-child(4) {
-            margin-right: 75px;
-        }
-        .nav__list-item:last-child {
-            margin-right: 0;
+            &:hover {
+                color: aqua;
+            }
         }
         .nav__button {
             padding: 7px 30px 8px;
             font-size: 15px;
             line-height: 25px;
             cursor: pointer;
+            &:hover {
+                background-position: right;
+            }
             transition: 0.5s background-position ease-in-out;
-            .nav__button-wrapper {
+            &-wrapper {
                 position: relative;
                 top: 1px;
             }
         }
-        .nav__button:hover {
-            background-position: right;
-        }
+
     }
 }
 
 .hero {
     margin-bottom: 350px;
     margin-top: 250px;
-    .hero__main {
+    &__main {
         max-width: 550px;
         position: relative;
         .hero__title {
@@ -99,7 +96,10 @@
             position: relative;
             z-index: 10;
             cursor: pointer;
-            .hero__button-wrapper {
+            &:hover {
+                background-position: right;
+            }
+            &-wrapper {
                 -webkit-animation-name: bounceInSpecial;
                 animation-name: bounceInSpecial;
                 display: inline-block;
@@ -113,43 +113,43 @@
             }
         }
 
-        .hero__main-pic-1 {
+        &-pic-1 {
             position: absolute;
             top: -140px;
             right: -820px;
             width: 847px;
             height: 944px;
-            z-index: 3;
+            z-index: -1;
             -webkit-animation-name: zeus;
             animation-name: zeus;
             animation-duration: 3s;
             -webkit-animation-duration: 3s;
         }
-        .hero__main-pic-2 {
+        &-pic-2 {
             position: absolute;
             top: 245px;
             left: -350px;
-            z-index: 2;
+            z-index: -2;
             -webkit-animation-name: zeus2;
             animation-name: zeus2;
             animation-duration: 3s;
             -webkit-animation-duration: 3s;
         }
-        .hero__main-pic-3 {
+        &-pic-3 {
             position: absolute;
             top: -330px;
             right: -820px;
-            z-index: 2;
+            z-index: -2;
             -webkit-animation-name: zeus;
             animation-name: zeus;
             animation-duration: 3s;
             -webkit-animation-duration: 3s;
         }
-        .hero__main-pic-4 {
+        &-pic-4 {
             position: absolute;
             top: -250px;
             right: -755px;
-            z-index: 2;
+            z-index: -2;
             opacity: 0.3;
             -webkit-animation-duration: 7s;
             animation-duration: 7s;
@@ -158,12 +158,12 @@
             -webkit-animation-name: fadeInSpecial;
             animation-name: fadeInSpecial;
         }
-        .hero__main-pic-5 {
+        &-pic-5 {
             position: absolute;
             top: 443px;
             right: -285px;
             opacity: 0.3;
-            z-index: 2;
+            z-index: -2;
             -webkit-animation-duration: 4s;
             animation-duration: 4s;
             -webkit-animation-fill-mode: both;
@@ -171,39 +171,37 @@
             -webkit-animation-name: fadeInSpecial;
             animation-name: fadeInSpecial;
         }
-        .hero__main-pic-6 {
+        &-pic-6 {
             position: absolute;
             top: -35px;
             right: -465px;
-            z-index: 2;
+            z-index: -2;
         }
-        .hero__main-pic-7 {
+        &-pic-7 {
             position: absolute;
             top: 610px;
             right: 0;
-            z-index: 1;
+            z-index: -3;
         }
-        .hero__main-pic-8 {
+        &-pic-8 {
             position: absolute;
             top: 125px;
             right: -647px;
-            z-index: 2;
+            z-index: -2;
             transform: rotate(90deg);
         }
-        .hero__main-pic-9 {
+        &-pic-9 {
             position: absolute;
             top: -150px;
             right: -900px;
-            z-index: -1;
+            z-index: -4;
             width: 1024px;
             height: 1000px;
             animation: circlered-2 8s linear infinite;
         }
     }
 
-    .hero__button:hover {
-        background-position: right;
-    }
+    
 }
 
 .unique {
@@ -283,9 +281,10 @@
             position: absolute;
             top: 515px;
             left: -145px;
-            z-index: 0;
+            z-index: -1;
         }
         .unique__pic-2 {
+            z-index: -2;
             position: absolute;
             top: -50px;
             left: -410px;
@@ -445,33 +444,33 @@
                 position: absolute;
                 top: -270px;
                 left: -40px;
-                z-index: 4;
+                z-index: -1;
             }
             .description__bottom-abs-pic-1 {
                 position: absolute;
                 top: -300px;
                 left: 180px;
-                z-index: 2;
+                z-index: -2;
                 animation: circleblue 10s linear infinite;
             }
             .description__bottom-abs-pic-2 {
                 position: absolute;
                 top: -280px;
                 left: -30px;
-                z-index: 1;
+                z-index: -3;
                 animation: circlered 10s linear infinite;
             }
             .description__bottom-abs-pic-3 {
                 position: absolute;
                 top: -44px;
                 left: -130px;
-                z-index: 2;
+                z-index: -2;
             }
             .description__bottom-abs-pic-4 {
                 position: absolute;
                 top: 665px;
                 left: -60px;
-                z-index: 1;
+                z-index: -3;
             }
         }
         .description__bottom-right {
@@ -966,19 +965,19 @@
             left: 700px;
             width: 398px;
             height: 326px;
-            z-index: 3;
+            z-index: -2;
         }
         .join__abs-pic-2 {
             position: absolute;
             top: 182px;
             left: 929px;
-            z-index: 4;
+            z-index: -1;
         }
         .join__abs-pic-3 {
             position: absolute;
             top: -450px;
             left: -260px;
-            z-index: 2;
+            z-index: -3;
         }
         .join__abs-pic-4 {
             position: absolute;
@@ -986,7 +985,7 @@
             left: 700px;
             width: 350px;
             height: 343px;
-            z-index: 1;
+            z-index: -4;
             animation: circlered-2 8s linear infinite;
             -webkit-animation: circlered-2 8s linear infinite;
         }
@@ -1064,11 +1063,11 @@
             left: -300px;
             height: 734px;
             width: 322px;
-            z-index: 3;
+            z-index: -2;
         }
         .faq__abs-pic-2 {
             position: absolute;
-            z-index: 0;
+            z-index: -4;
             top: -130px;
             left: -400px;
             width: 487px;
@@ -1080,7 +1079,7 @@
             position: absolute;
             top: 0px;
             left: -140px;
-            z-index: 2;
+            z-index: -3;
         }
         .faq__abs-pic-4 {
             position: absolute;
@@ -1088,13 +1087,13 @@
             left: 850px;
             width: 190px;
             height: 334px;
-            z-index: 5;
+            z-index: -1;
         }
         .faq__abs-pic-5 {
             position: absolute;
             top: 200px;
             left: 700px;
-            z-index: 0;
+            z-index: -4;
             width: 562px;
             height: 550px;
             animation: circlered-2 8s linear infinite;
