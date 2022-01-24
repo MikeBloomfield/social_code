@@ -154,7 +154,8 @@
                                     Отримати
                                 </span>
                             </button>
-                            <span class="guide__button-add animate__animated animate__fadeInUp animate__slow animate__delay-1s wow ">
+                            <span
+                                class="guide__button-add animate__animated animate__fadeInUp animate__slow animate__delay-1s wow ">
                                 Ми не надсилатимемо тобі спаму
                             </span>
                         </div>
@@ -745,20 +746,26 @@
                 <div class="popup__title">
                     Залиште свої данні
                 </div>
-                <form name="callback" method="get" action="">
+                <form name="callback" method="get" action="" a>
                     <div>
-                        <input type="text" placeholder="Ім’я юзера" class="popup__name">
+                        <input type="text" placeholder="Ім’я юзера" name="name" class="popup__name" >
                     </div>
-                     <div>
-                        <input type="text" placeholder="Пошта юзера" class="popup__mail">
-                     </div>
-                     <div>
-                        <input type="text" placeholder="Номер телефону юзера" class="popup__number">
-                     </div>
-                     <button class="popup__button" type="submit">
-    
-                    </button>
+                    <div>
+                        <input type="mail" placeholder="Пошта юзера" name="mail" class="popup__mail">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Номер телефону юзера"  class="popup__number" name="phone">
+                    </div>
+                    <div class="popup__button-container">
+                        <button class="popup__button" type="submit">
+                            <span class="popup__button-wrapper">
+                                Отримати
+                            </span>
+                        </button>
+                    </div>
                 </form>
+                <img src="assets/images/vector/dots-popup-1.svg" alt="" class="popup__pic-1">
+                <img src="assets/images/vector/dots-popup-2.svg" alt="" class="popup__pic-2">
             </div>
         </div>
     </main>
