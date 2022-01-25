@@ -42,6 +42,7 @@
     "webpack-dev-server": "^4.5.0"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.20",
     "animate.css": "^4.1.1",
     "jquery": "^3.6.0",
     "wowjs": "^1.1.3"

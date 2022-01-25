@@ -15,6 +15,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" />
 </head>
 
 <body>
@@ -48,7 +49,7 @@
                                 Які можливості?
                             </a>
                         </li>
-                        <button class="nav__button">
+                        <button data-src="#hidden" data-fancybox class="nav__button">
                             <span class="nav__button-wrapper">
                                 Взяти участь
                             </span>
@@ -71,7 +72,8 @@
                         на
                         засадах філософської течії стоїцизму.
                     </p>
-                    <button class="hero__button animate__animated animate__fadeIn animate__slow  ">
+                    <button data-src="#hidden" data-fancybox
+                        class="hero__button animate__animated animate__fadeIn animate__slow  ">
                         <span class="hero__button-wrapper animate__animated animate__bounceIn ">Записатись!</span>
                     </button>
                     <img src="assets/images/zeus.png" alt="zeus" class="hero__main-pic-1  ">
@@ -149,7 +151,8 @@
                             Отримай безкоштовий примірник на свою пошту з рекомендаціями та гайдами від експертів
                         </div>
                         <div class="guide__button-wrapper">
-                            <button class="guide__button animate__animated animate__fadeInUp animate__slow wow">
+                            <button data-src="#hidden" data-fancybox
+                                class="guide__button animate__animated animate__fadeInUp animate__slow wow">
                                 <span class="guide__button-wrapper-inner">
                                     Отримати
                                 </span>
@@ -353,8 +356,8 @@
                     Варіанти пакетів для купівлі
                 </h2>
                 <div class="package__cards">
-                    <div
-                        class="package__card package--first animate__animated animate__backInLeft animate__delay-1s wow ">
+                    <div data-src="#hidden" data-fancybox
+                        class="package__card  package--first animate__animated animate__backInLeft animate__delay-1s wow ">
                         <div class="package__wrapper">
                             <h3 class="package__title-inner">
                                 База
@@ -387,7 +390,7 @@
                             </button>
                         </div>
                     </div>
-                    <div
+                    <div data-src="#hidden" data-fancybox
                         class="package__card package--second animate__animated animate__backInUp animate__delay-1s wow ">
                         <div class="package__second-card-wrapper">
                             <div class="package__wrapper">
@@ -429,14 +432,14 @@
                             <div class="package__price">
                                 $370
                             </div>
-                            <button class="package__button">
+                            <button  class="package__button">
                                 <span class="package__button-wrapper">
                                     Записатись
                                 </span>
                             </button>
                         </div>
                     </div>
-                    <div
+                    <div data-src="#hidden" data-fancybox
                         class="package__card package--third animate__animated animate__backInRight animate__delay-1s  wow">
                         <div class="package__third-card-wrapper">
                             <div class="package__wrapper package--second-wrapper">
@@ -483,7 +486,7 @@
                             <div class="package__price">
                                 $520
                             </div>
-                            <button class="package__button">
+                            <button  class="package__button">
                                 <span class="package__button-wrapper">
                                     Записатись
                                 </span>
@@ -524,7 +527,8 @@
                     <div class="join__subtitle animate__animated animate__fadeInUp wow">
                         Хочу прокачувати себе та свій рівень соціальної взаємодії
                     </div>
-                    <button class="join__button animate__animated animate__fadeInUp wow">
+                    <button data-src="#hidden" data-fancybox
+                        class="join__button animate__animated animate__fadeInUp wow">
                         <span class="join__button-wrapper">Записатись</span>
                     </button>
                     <img src="assets/images/women.png" alt=""
@@ -742,19 +746,20 @@
             </div>
         </footer>
         <div class="popup__wrapper">
-            <div class="popup">
+            <div class="popup" id="hidden">
                 <div class="popup__title">
                     Залиште свої данні
                 </div>
-                <form name="callback" method="get" action="" a>
+                <form name="callback" method="get" action="">
                     <div>
-                        <input type="text" placeholder="Ім’я юзера" name="name" class="popup__name" autocomplete="off" >
+                        <input type="text" placeholder="Ім’я юзера" name="name" class="popup__name" autocomplete="off">
                     </div>
                     <div>
                         <input type="mail" placeholder="Пошта юзера" name="mail" class="popup__mail" autocomplete="off">
                     </div>
                     <div>
-                        <input type="text" placeholder="Номер телефону юзера"  class="popup__number" name="phone" autocomplete="off">
+                        <input type="text" placeholder="Номер телефону юзера" class="popup__number" name="phone"
+                            autocomplete="off">
                     </div>
                     <div class="popup__button-container">
                         <button class="popup__button" type="submit">
@@ -769,9 +774,6 @@
             </div>
         </div>
     </main>
-
 </body>
-
-
 
 </html>
