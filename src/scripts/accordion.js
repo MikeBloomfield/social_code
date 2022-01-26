@@ -1,5 +1,7 @@
 var $ = require('jquery');
 
+
+//accordion
 $(document).ready(function () {
     $('.accordion__item-title').click(function (event) {
         const parent = $(this).parent();
@@ -28,7 +30,52 @@ $(document).ready(function () {
         }
     });
 
+//slider
 
+    let position = 0;
+    let slidesToShow = 1;
+    let slidesToScroll = 1;
+    const container = $('.slider');
+    const track = $('.slider__line');
+    const item = $('.slider__line-item');
+    const btnPrev = $('.feedback__arrow-left');
+    const btnNext = $('.feedback__arrow-right');
+    const itemsCount = item.length;
+    const itemWidth = container.width() / slidesToShow;
+    const movePosition = slidesToScroll * itemWidth;
+
+    item.each(function (index, item) {
+        $(item).css({
+            minWidth: itemWidth,
+        });
+    });
+
+
+    btnNext.click(function(){
+        position -= movePosition;
+        setPosition();
+        checkButtons();
+    });
+
+    btnPrev.click(function(){
+        position += movePosition;
+        setPosition();
+        checkButtons();
+    });
+
+    const setPosition = () => {
+        track.css({
+            transform: `translateX(${position}px)`
+        });
+    };
+
+
+    const checkButtons = () => {
+        btnPrev.prop('disabled', position === 0);
+        btnNext.prop('disabled', position <= -(itemsCount - slidesToShow) * itemWidth);
+    };
+
+    checkButtons();
 });
 
 

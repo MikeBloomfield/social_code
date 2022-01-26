@@ -592,3 +592,31 @@
   }
 }
 
+@-webkit-keyframes borderShow {
+  0% {
+    border: double 1 px #655ce0;
+  }
+  5% {
+    border: double 1 px transparent;
+  }
+  95% {
+    border: double 1 px transparent;
+  }
+
+  100% {
+    border: double 1 px #655ce0;
+  }
+}
+@keyframes borderShow {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
