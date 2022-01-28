@@ -5,9 +5,79 @@
 }
 
 @media (max-width: 991px) {
+    br + br {
+        display: none;
+    }
 
+    .description__blockquote-container {
+        padding: 32px 23px 20px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
     h2 {
         font-size: 40px;
+    }
+    .unique__card-title {
+        margin-top: 200px;
+        margin-bottom: 15px;
+    }
+    .feedback__arrow-right {
+        margin-right: 50px;
+    }
+    .description__author {
+        padding-right: 45px;
+    }
+    .unique__card-desc {
+        margin-bottom: 32px;
+        font-size: 15px;
+    }
+
+    .faq__abs-pic-1 {
+        display: none;
+    }
+    .unique-abs-pic-1 {
+        position: absolute;
+        max-width: 73px;
+        height: 73px;
+        top: 90px;
+        left: 0px;
+    }
+    .unique-abs-pic-2 {
+        position: absolute;
+        max-width: 118px;
+        height: 106px;
+        top: 30px;
+        left: -50px;
+    }
+    .unique-abs-pic-3 {
+        position: absolute;
+        max-width: 73px;
+        height: 73px;
+        top: 90px;
+        left: -60px;
+    }
+    .unique-abs-pic-4 {
+        position: absolute;
+        max-width: 83px;
+        height: 73px;
+        top: 70px;
+        left: -25px;
+    }
+    .unique-abs-pic-5 {
+        position: absolute;
+        max-width: 73px;
+        height: 73px;
+        top: 50px;
+        left: -10px;
+    }
+    .unique-abs-pic-6 {
+        position: absolute;
+        max-width: 93px;
+        height: 100px;
+        top: 70px;
+        left: -70px;
     }
     .hero {
         margin-bottom: 100px;
@@ -49,9 +119,27 @@
 
     .hero__main-pic-1 {
         overflow: hidden;
-        width: 400px;
-        top: -74px;
-        right: -210px;
+        width: 370px;
+        top: -54px;
+        right: -180px;
+    }
+
+    .package__card {
+        padding: 0;
+    }
+
+    .package__first-card-pic {
+        max-width: 190px;
+        height: 206px;
+        margin-top: 50px;
+        margin-bottom: 71px;
+    }
+
+    .package__second-card-pic {
+        position: absolute;
+        top: 850px;
+        max-width: 220px;
+        height: 137px;
     }
 
     .hero__main-pic-3,
@@ -73,12 +161,82 @@
     }
 
     .hero__main-pic-9 {
-        animation: none;
-        width: 620px;
-        right: -310px;
+        width: 450px;
+        right: -160px;
     }
 
-    
+    .guide__abs-pic-1 {
+        position: absolute;
+        top: -520px;
+        right: 60px;
+    }
+
+    .description__desc-top,
+    .description-bottom {
+        max-width: 340px;
+        line-height: 35px;
+    }
+
+    .guide__inner-bottom {
+        margin-right: 5px;
+    }
+    .description__desc-top,
+    .description__desc-bottom {
+        max-width: 340px;
+        line-height: 35px;
+    }
+
+    .guide__abs-pic-2 {
+        display: none;
+    }
+
+    .map__bottom-abs-pic-1 {
+        position: absolute;
+        top: 210px;
+        left: 105px;
+        z-index: 2;
+        width: 270px;
+    }
+
+    .description__bottom-pic {
+        max-width: 313px;
+        height: 530px;
+        position: absolute;
+        top: 0px;
+        left: 20px;
+        z-index: -1;
+    }
+    .map__top-abs-pic-3 {
+        display: none;
+    }
+
+    .map__top-abs-pic-2 {
+        position: absolute;
+        top: 310px;
+        left: 89px;
+        z-index: -1;
+        transform: rotate(90deg);
+        max-width: 120px;
+        height: 347px;
+    }
+
+    .description__bottom-abs-pic-1 {
+        animation: none;
+    }
+    .description__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+    }
+
+    .description__top-pic {
+        max-width: 438px;
+        height: 274px;
+        position: absolute;
+        top: 120px;
+        right: 0px;
+        z-index: 3;
+    }
 
     .nav {
         &__list {
@@ -91,9 +249,219 @@
             }
         }
     }
+
+    .unique__card-desc {
+        margin-bottom: 32px;
+        font-size: 14px;
+    }
+
+    .nav__item-link {
+        margin-top: 12px;
+    }
+    
+    
 }
 
 @media (max-width: 767px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .hero__main-pic-1 {
+        display: none;
+    }
+    .guide__abs-pic-1 {
+        display: none;
+    }
+    .description__blockquote {
+        font-size: 15px;
+        line-height: 40px;
+        max-width: 844px;
+    }
+    .description__blockquote-container {
+        margin-bottom: 60px;
+    }
+
+    .description {
+        margin-bottom: 60px;
+    }
+
+    .package__title-inner {
+        margin-top: 15px;
+    }
+
+    .package__card {
+        margin-bottom: 30px;
+    }
+
+    .package {
+        margin-bottom: 30px;
+    }
+
+    .join {
+        margin-bottom: 80px;
+    }
+
+    .slider__comment {
+
+        font-size: 16px;
+ 
+    }
+
+    .feedback__arrow-right {
+        margin-right: 30px;
+    }
+
+    .feedback__subtitle {
+        max-width: 300px;
+    }
+
+    .map__top {
+        margin-bottom: 71px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slider__name {
+        font-size: 16px;
+    }
+
+    .map__bottom-pic,
+    .map__bottom-abs-pic-1,
+    .map__bottom-abs-pic-2,
+    .map__bottom-abs-pic-3,
+    .map__bottom-abs-pic-4 {
+        display: none;
+    }
+
+    .join__button {
+        padding: 12px 29px 13px 30px;
+        cursor: pointer;
+        transition: 0.5s background-position ease-in-out;
+    }
+
+    .package__price {
+
+        margin-top: 20px;
+    }
+
+    .package__second-card-pic {
+        display: none;
+    }
+
+    .description__author {
+        font-style: italic;
+        font-size: 16px;
+        line-height: 40px;
+        font-weight: 100;
+        text-align: right;
+        display: block;
+        text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    }
+
+    .description__bottom-pic {
+        max-width: 313px;
+        height: 530px;
+        position: absolute;
+        top: 640px;
+        left: 40px;
+        z-index: -1;
+    }
+
+    .guide__abs-pic-4 {
+        display: none;
+    }
+
+    .slider__abs-pic {
+        display: none;
+    }
+
+    .description__top-pic {
+        max-width: 438px;
+        height: 274px;
+        position: absolute;
+        top: 370px;
+        right: 0px;
+        z-index: 3;
+    }
+
+    .description__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 285px;
+    }
+
+    .description__bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 506px;
+    }
+
+    .guide__abs-pic-1 {
+        display: none;
+    }
+    .guide__pic {
+        display: none;
+    }
+
+    .guide__button {
+        padding: 12px 37px 13px 38px;
+    }
+
+    .hero__button {
+        padding: 10px 29px 10px 29px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 25px;
+        transition: 0.5s background-position ease-in-out;
+        position: relative;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .hero__main-pic-9 {
+        width: 310px;
+        right: -160px;
+        top: -60px;
+        left: 80px;
+    }
+
+    .map__top-pic,
+    .map__top-abs-pic-1,
+    .map__top-abs-pic-2,
+    .map__top-abs-pic-3,
+    .description__top-abs-pic-1,
+    .description__top-abs-pic-2,
+    .description__bottom-abs-pic-1,
+    .description__bottom-abs-pic-2,
+    .description__bottom-abs-pic-3,
+    .description__bottom-abs-pic-4 {
+        display: none;
+    }
+
+    .guide__desc {
+        margin-bottom: 50px;
+        font-size: 17px;
+    }
+
+    .join__abs-pic-1,
+    .join__abs-pic-2 {
+        display: none;
+    }
+
+    .unique__card {
+        grid-column: span 3;
+        margin-bottom: 20px;
+    }
+
+    .package__cards {
+        flex-direction: column;
+    }
+
     .header__logo {
         transform: scale(0.8);
     }

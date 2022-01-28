@@ -253,7 +253,9 @@
         z-index: 2;
         backdrop-filter: blur(2px);
         -webkit-backdrop-filter: blur(2px);
-
+        &-pic-wrapper {
+            position: absolute;
+        }
         &-title {
             margin-top: 278px;
             margin-bottom: 30px;
@@ -270,42 +272,42 @@
         max-width: 73px;
         height: 73px;
         top: 120px;
-        left: 180px;
+        left: 0px;
     }
     &-abs-pic-2 {
         position: absolute;
         max-width: 118px;
         height: 106px;
         top: 60px;
-        left: 110px;
+        left: -50px;
     }
     &-abs-pic-3 {
         position: absolute;
         max-width: 73px;
         height: 73px;
         top: 120px;
-        left: 120px;
+        left: -60px;
     }
     &-abs-pic-4 {
         position: absolute;
         max-width: 83px;
         height: 73px;
         top: 100px;
-        left: 155px;
+        left: -25px;
     }
     &-abs-pic-5 {
         position: absolute;
         max-width: 73px;
         height: 73px;
         top: 80px;
-        left: 170px;
+        left: -10px;
     }
     &-abs-pic-6 {
         position: absolute;
         max-width: 93px;
         height: 100px;
         top: 100px;
-        left: 110px;
+        left: -70px;
     }
     &__pic-1 {
         position: absolute;
@@ -370,7 +372,6 @@
     &__pic {
         max-width: 188px;
         height: 381px;
-        margin-right: 185px;
         position: relative;
         z-index: 2;
     }
@@ -399,7 +400,7 @@
         top: -205px;
         left: 70px;
         animation-delay: 2s;
-        // animation: bounceSpecial 8s infinite ease-in-out;
+        animation: bounceSpecial 8s infinite ease-in-out;
     }
     &__desc {
         margin-bottom: 50px;
@@ -409,6 +410,9 @@
     }
     &__inner {
         max-width: 550px;
+        &-bottom {
+            margin-right: 185px;
+        }
     }
 }
 
