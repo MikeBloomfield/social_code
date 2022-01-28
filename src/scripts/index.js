@@ -2,6 +2,7 @@
 import '../styles/styles.css';
 import './accordion.js';
 import './scroll.js';
+import './nav.js';
 import { Fancybox } from "@fancyapps/ui";
 import './mask.js';
 import WOW from 'wowjs';

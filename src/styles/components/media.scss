@@ -1,56 +1,174 @@
-
-/* Large desktops and laptops */
-@media (max-width: 1200px) {
-    // main {
-    //     width: 100vh;
-    // }
-    // main {
-    //     img {
-    //         display: none;
-    //     }
-    // }
-}
-
-/* Landscape tablets and medium desktops */
 @media (max-width: 1199px) {
-    
+    .container {
+        padding: 0 30px;
+    }
 }
 
-/* Portrait tablets and small desktops */
 @media (max-width: 991px) {
 
-  
+    h2 {
+        font-size: 40px;
+    }
+    .hero {
+        margin-bottom: 100px;
+        margin-top: 140px;
+        &__title {
+            font-size: 50px;
+        }
+        &__subtitle {
+            font-size: 25px;
+            line-height: 35px;
+        }
+    }
+    .join__abs-pic-1 {
+        top: 10px;
+        left: 350px;
+    }
+    .join__abs-pic-2 {
+        left: 479px;
+    }
+    .join__abs-pic-4 {
+        display: none;
+    }
+    .hero__main-pic-9 {
+        top: -80px;
+        right: -900px;
+        max-width: 724px;
+        height: 500px;
+    }
+    .nav__button-wrapper {
+        font-size: 13px;
+    }
+    .hero__button-wrapper {
+        font-size: 20px;
+    }
 
+    .container {
+        padding: 0 30px;
+    }
+
+    .hero__main-pic-1 {
+        overflow: hidden;
+        width: 400px;
+        top: -74px;
+        right: -210px;
+    }
+
+    .hero__main-pic-3,
+    .hero__main-pic-4,
+    .hero__main-pic-5,
+    .hero__main-pic-6,
+    .hero__main-pic-8,
+    .line-hero-bottom,
+    .description__bottom-abs-pic-3,
+    .map__line-1-pic,
+    .map__line-2-pic,
+    .join__abs-pic-3,
+    .footer__abs-pic,
+    .faq__abs-pic-4,
+    .faq__abs-pic-5,
+    .faq__abs-pic-6,
+    .package__abs-pic {
+        display: none;
+    }
+
+    .hero__main-pic-9 {
+        animation: none;
+        width: 620px;
+        right: -310px;
+    }
+
+    
+
+    .nav {
+        &__list {
+            &-item {
+                font-size: 13px;
+                margin-right: 20px;
+                &:nth-child(4) {
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
 }
 
-/* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+    .header__logo {
+        transform: scale(0.8);
+    }
+
     img {
-        display: none;
+        overflow-x: hidden;
     }
 
     .burger-menu {
         display: block;
     }
 
-    .header__nav {
+    .nav {
         position: fixed;
         z-index: 999;
         height: 100vh;
         width: 100vw;
-        background-color: #5c1e6d;
-        top:0;
+        background-color: #02042d;
+        top: 0;
         left: 0;
+        transform: translateX(100%);
+        transition: 0.2s all linear;
+        &__button {
+            margin-top: 30px;
+            display: block;
+            margin-left: 50px;
+            margin-right: auto;
+        }
+        &__list {
+            margin-top: 100px;
+            flex-direction: column;
+            align-items: center;
+            &-item {
+                font-weight: 700;
+                margin-bottom: 30px;
+                margin-left: 100px;
+                font-size: 30px;
+                width: 100%;
+                margin-right: 0;
+                &:nth-child(4) {
+                    margin-right: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__close {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 55px;
+            right: 38px;
+            &-item {
+                width: 100%;
+                height: 2px;
+                background-color: #444362;
+                display: block;
+                top: 0;
+                &:first-child {
+                    transform: rotate(45deg);
+                }
+                &:last-child {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
     }
-
 }
 
-/* Portrait phones and smaller */
+.nav--active {
+    transform: translateX(0%);
+}
+
 @media (max-width: 480px) {
-
 }
 
-/* Iphone 5 */
 @media (max-width: 320px) {
-
 }

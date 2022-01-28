@@ -1,12 +1,13 @@
 @import "normalize.scss";
+@import "fancybox.css";
 @import "reset.scss";
 @import "default.scss";
 @import "fonts.scss";
-@import "components/media.scss";
 @import "components/animation.scss";
 @import "components/header.scss";
+@import "components/media.scss";
 @import "animate-local.scss";
-@import "fancybox.css";
+
 
 
 
